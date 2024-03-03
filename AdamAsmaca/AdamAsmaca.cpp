@@ -8,7 +8,7 @@
 using namespace std;
 string kelime_sec() {
 	
-	vector<string> kelimeler = { "DARAMCIK","","KABARCIKLI","MADALYONCU","ADAMASMACA","JENERASYON","LADESLENME","KAPI","HACIYATMAZ","KAMP","LAFAZANLIK","RADYOCULUK","OKUL","FUTBOL","ALMANYA","MALATYA","AYDIN",};
+	vector<string> kelimeler = { "AK","BEYAZ","KIRMIZI","YILDIZ","KABARCIKLI","MADALYONCU","ADAMASMACA","JENERASYON","LADESLENME","KAPI","HACIYATMAZ","KAMP","LAFAZANLIK","RADYOCULUK","OKUL","FUTBOL","ALMANYA","MALATYA","AYDIN",};
 	srand(time(NULL));
 	int index = rand() % kelimeler.size();
 	return kelimeler[index];

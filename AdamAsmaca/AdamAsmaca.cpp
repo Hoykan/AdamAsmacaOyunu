@@ -174,14 +174,14 @@ int main() {
 	while (!oyunbitti) {
 		adamasmacagöster(yanlisdeneme);
 		cout << "Gizli Kelime: " << gizlikelimestr << endl;
-		cout << "Bir harf tahmini grin: ";
+		cout << "Bir harf tahmini girin: ";
 		cin >> tahmin;
 		if (!harfkontrol(kelime, tahmin, gizlikelimestr)) {
 			yanlisdeneme++;
 			cout << "Yanlis tahmin!";
 		}
 		if (oyunKazanildiMi(gizlikelimestr)) {
-			cout << "Tebrikler dogru tahmin ettiniz!" << kelime << endl;
+			cout << "Tebrikler dogru tahmin ettiniz!" << endl<< kelime << endl;
 			oyunbitti = true;
 		}
 		else if (yanlisdeneme == 12) {
